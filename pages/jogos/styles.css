@@ -1,0 +1,58 @@
+.info {
+  width: 100%;
+  color: white;
+  height: 15rem;
+  margin-bottom: 5rem;
+}
+
+.info h2 {
+  font-size: 3.2rem;
+}
+
+.info p {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+
+.info span {
+  color: var(--green-1);
+}
+
+.games {
+  gap: 5rem;
+}
+
+.games__card {
+  color: white;
+}
+
+
+
+.games__card img:hover {
+  filter: brightness(.7)
+}
+
+.games__card p {
+  font-size: 3.2rem;
+}
+
+.games__card span {
+  font-size: 2.4rem;
+  color: var(--green-1);
+}
+
+@media screen and (min-width: 768px){
+  .info h2 {
+    font-size: 4rem;
+  }
+
+  .info p {
+    font-size: 3rem;
+  }
+
+  .games {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 7rem;
+  }
+}

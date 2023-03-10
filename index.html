@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/layout.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <title>FYG Store</title>
+</head>
+
+<body>
+
+  <header class="flex p-10 px-60">
+    <a href="./index.html">
+      <h1>FYG</h1>
+    </a>
+    <nav>
+      <ul class="flex">
+        <li><a class="active" href="./index.html">Início</a></li>
+        <li><a href="./pages/jogos/jogos.html">Jogos</a></li>
+        <li><a href="./pages/contato/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner flex">
+    <p>Encontre Seu Jogo!</p>
+    <p>Jogos de PC, Xbox e PS5 por preços acessíveis</p>
+    <a href="./pages/jogos/jogos.html">
+      <button class="p-14">Ir para Loja</button>
+    </a>
+  </section>
+  <section class="benefits flex column-center">
+    <h2>Vantagens</h2>
+    <div class="benefits__items__container flex column-center">
+      <div class="benefits__item flex column-center">
+        <img src="./assets/advantage-cloud.png" alt="cloud-icon">
+        <span>Armazenamento Seguro
+          em Nuvem</span>
+      </div>
+      <div class="benefits__item flex column-center">
+        <img src="./assets/advantage-download.png" alt="download-icon">
+        <span>Download 80% mais rápido.</span>
+      </div>
+      <div class="benefits__item flex column-center">
+        <img src="./assets/advantage-sale.png" alt="sale-icon">
+        <span>Preços Promocionais</span>
+      </div>
+    </div>
+  </section>
+  <section class="location flex column-center">
+    <h2>Visite Nossa Loja</h2>
+    <div class="location__info flex column-center">
+      <div class="location__info__address flex p-14">
+        <img src="./assets/map-icon.png" alt="map-icon">
+        <span>Av. Adjair da Silva Casé, 800,
+          Indianópolis, Caruaru-PE</span>
+      </div>
+      <div class="location__info__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.1073519334063!2d-35.946933585667914!3d-8.292114485690082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a98a5b223fc33b%3A0x2de76e63d5fddc35!2sAv.%20Adjar%20da%20Silva%20Cas%C3%A9%2C%20800%20-%20Indian%C3%B3polis%2C%20Caruaru%20-%20PE%2C%2055024-740!5e0!3m2!1spt-BR!2sbr!4v1678442071383!5m2!1spt-BR!2sbr"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="flex column-center">
+    <p>FYG</p>
+    <span>Copyright &copy; 2023. Todos os direitos reservados</span>
+  </footer>
+
+  <script>
+
+    const config = {
+      origin: 'top',
+      duration: 1000,
+      delay: 200,
+      distance: '50px',
+      scale: 1,
+      easing: 'ease-in',
+
+    }
+    
+    ScrollReveal().reveal('.banner p', config);
+    ScrollReveal().reveal('.banner a', config);
+    ScrollReveal().reveal('.benefits', config);
+    ScrollReveal().reveal('.location', config);
+
+  </script>
+
+</body>
+
+</html>

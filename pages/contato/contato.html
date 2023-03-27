@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="../../styles/layout.css">
   <title>Contato</title>
 </head>
+
 <body>
   <header class="flex p-10 px-60">
     <a href="../../index.html">
@@ -24,26 +26,34 @@
   </header>
 
   <section class="contact flex p-14">
-    
+
     <img src="./imgs/games.png" alt="games">
 
-    <div 
-      class="contact__form flex column-center p-10"
-    >
+    <div class="contact__form flex column-center p-10">
       <p>Entre em Contato</p>
       <form class="flex column-center">
-        <input class="p-12" type="text" placeholder="Nome">
-        <input class="p-12" type="email"  placeholder="Email">
-        <textarea class="p-12" placeholder="Messagem"></textarea>
-        <button class="p-10" type="button">Enviar</button>
+        <input class="p-12" type="text" placeholder="Nome" id="name">
+        <span class="hidden">*Campo Obrigatório</span>
+        <input class="p-12" type="email" placeholder="Email" id="email">
+        <span class="hidden">Email Inválido</span>
+
+        <input class="p-12" type="tel" name="input-tel" id="tel" placeholder="(99) 99999-9999" required
+          pattern="^\(\d{2}\) \d{5}-\d{4}$" maxlength="15">
+        <span class="hidden">Telefone Inválido</span>
+
+        <textarea class="p-12" placeholder="Messagem" id="msg"></textarea>
+        <button class="p-10" type="button" onclick="validateForm()">Enviar</button>
       </form>
     </div>
-    
+
   </section>
 
   <footer class="flex column-center">
     <p>FYG</p>
     <span>Copyright &copy; 2023. Todos os direitos reservados</span>
   </footer>
+
+  <script src="./scripts/scripts.js"></script>
 </body>
+
 </html>
